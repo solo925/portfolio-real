@@ -1,26 +1,23 @@
-import React from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import About from './components/about';
-import Contact from './components/contacts';
-import Navbar from './components/navbar';
-import Projects from './components/projects';
-import Skills from './components/Skills';
+// src/App.js
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Contact from "./components/Contact";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import ProjectDetail from "./components/ProjectDetails";
+import Projects from "./components/projects";
 import './index.css';
-import Scene from './scenes/scenes';
 
-const App = () => {
-  return (
-    <Router>
-      <Navbar />
-      <Scene />
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
-  );
-};
+const App = () => (
+  <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/projects/:id" element={<ProjectDetail />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+  </Router>
+);
 
 export default App;
