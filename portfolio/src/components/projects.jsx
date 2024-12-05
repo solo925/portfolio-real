@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import im from '../assets/images/img1.png';
+import cover from '../assets/images/plantcare/cover.webp';
+
+
 
 const projects = [
-    { id: 1, name: "PlantCare companion", description: "All-in-one app for plant enthusiasts", image: [im] },
-    { id: 2, name: "PlantCare companion", description: "All-in-one app for plant enthusiasts", image: [im] },
-    { id: 3, name: "PlantCare companion", description: "All-in-one app for plant enthusiasts", image: [im] },
-    { id: 4, name: "PlantCare companion", description: "All-in-one app for plant enthusiasts", image: [im] },
-    { id: 5, name: "Project Two", description: "This is project two", image: "/project2.png" }
+
+    { id: 1, name: "Plant care companion App", description: "All in one app for indoor/outdoor plants", image: [cover] }
 ];
 
 const Projects = () => (
