@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import ai from '../assets/images/plantcare/ai.png';
 import ar from '../assets/images/plantcare/artest1.png';
 import ar2 from '../assets/images/plantcare/artest2.png';
 import chat from '../assets/images/plantcare/chat.jpeg';
@@ -11,6 +12,8 @@ import dashboard from '../assets/images/plantcare/dashboard.png';
 import home from '../assets/images/plantcare/home.png';
 import landing from '../assets/images/plantcare/landing.png';
 import profile from '../assets/images/plantcare/profile.png';
+import care from '../assets/images/plantcare/plantcaretips.png';
+
 
 const projectDetails = {
     1: {
@@ -18,7 +21,7 @@ const projectDetails = {
         description:
             "An app designed for plant enthusiasts that helps users care for their indoor and outdoor plants. Users can track plant health, set reminders for watering, fertilizing, and repotting, and get tips on plant care. Community Forum: A space for users to ask questions, share tips, etc. AR to visualize how a plant will look in their space before purchasing.",
         techStack: ["React", "Node.js", "Express", "postgreSQL", "Three js", "Typescript", "css"],
-        images: [landing, home, dashboard, profile, commun, commun2, commun4, chat, chat2, ar, ar2],
+        images: [landing, home, dashboard, profile, commun, commun2, commun4, care, ai, chat, chat2, ar, ar2],
         captions: [
             "This is the landing page.",
             "A user is redirected to the home page after logging in.",
@@ -27,12 +30,14 @@ const projectDetails = {
             "A user can view the community forum and ask questions, share tips, add posts, comment on posts, and like posts.",
             "A user can view the community forum and ask questions, share tips, add posts, comment on posts, and like posts.",
             "A user can view the community forum and ask questions, share tips, add posts, comment on posts, and like posts.",
+            "users can view the care tips and explore care tutoroals for their plants.",
+            "user can use integrated ai to diagnose their plant's health.",
             "User can join rooms, create rooms, and chat with other online users, also send private messages.",
             "User can join rooms, create rooms, and chat with other online users, also send private messages.",
             "Sample room with the model before testing how it will look in the user's space.",
             "Sample room after placing it on a smaller table."
         ],
-        githubLink: "https://github.com/your-username/plantcare-companion"
+        githubLink: "https://github.com/solo925/Plant-Care-Companion-App"
     },
     2: {
         name: "Car Game",
@@ -143,7 +148,7 @@ const styles = {
         color: "#444",
         marginBottom: "20px",
         lineHeight: "1.8",
-        textAlign: "left", // Align left for better readability
+        textAlign: "left",
     },
     techStackContainer: {
         marginBottom: "30px",
@@ -173,7 +178,7 @@ const styles = {
     },
     imageCard: {
         width: "100%",
-        height: "300px", // Adjusting height to be consistent
+        height: "300px",
         maxWidth: "400px",
         margin: "0 auto",
         position: "relative",
@@ -186,7 +191,7 @@ const styles = {
     image: {
         width: "100%",
         height: "100%",
-        objectFit: "contain", // Ensures the image fits properly within the card
+        objectFit: "contain",
         borderRadius: "8px",
     },
     caption: {
